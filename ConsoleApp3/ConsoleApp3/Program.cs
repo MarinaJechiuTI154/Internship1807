@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
@@ -11,10 +7,10 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int a, b, c;
-            a = 120;
-            b = 150;
+            a = 5;
+            b = 7;
             Console.WriteLine(sum(a, b));
-            Console.WriteLine(prod(a, b));
+            Console.WriteLine(exp(a, b));
 
             Console.ReadKey();
         }
@@ -23,9 +19,9 @@ namespace ConsoleApp3
         {
             return a + b;
         }
-        public static int prod(int a, int b)
+        public static double exp(int a, int b)
         {
-            return a * b;
+            return Math.Pow(a, b);
         }
     }
 
