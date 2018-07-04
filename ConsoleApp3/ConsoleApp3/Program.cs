@@ -10,6 +10,7 @@ namespace ConsoleApp3
             a = 5;
             b = 7;
             Console.WriteLine(sum(a, b));
+            Console.WriteLine(exp(a, b));
 
             Console.ReadKey();
         }
@@ -18,7 +19,10 @@ namespace ConsoleApp3
         {
             return a + b;
         }
-
+        public static double exp(int a, int b)
+        {
+            return Math.Pow(a, b);
+        }
     }
 
 
